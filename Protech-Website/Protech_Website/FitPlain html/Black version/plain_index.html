@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+
+<!-- /**
+	FitPlain- one page Creative portfolio Template
+ 	Copyright (c) 2013, Subramanian 
+
+	Author: Subramanian
+    Profile: themeforest.net/user/FMedia/
+	
+    Version: 1.0.0
+	Release Date: July 2013
+**/ -->	
+
+    <html lang="en"> 
+    
+    <head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>FitPlain- one page Creative portfolio Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- CSS
+  ================================================== --> 
+  
+  <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  	
+    <!-- Included CSS files 
+	================================================== -->
+    
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap-responsive.min.css">    
+	<link rel="stylesheet" type="text/css"  href="font-awesome/css/font-awesome.min.css">    
+  	<link rel="stylesheet" type="text/css"  href="css/main.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/base.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/color.css"> 
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/flexslider.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/supersized.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/supersized.shutter.min.css" media="screen" />
+    
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- Included javascript files 
+	================================================== -->
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/jquery.knob.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script> 	  
+    <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+    <script type="text/javascript" src="js/jquery.masonry.min.js" ></script> 
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.isotope.min.js" ></script> 
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>    
+    <script type="text/javascript" src="js/custom.min.js"></script>  
+    <script type="text/javascript" src="js/main-fm.min.js"></script> 
+
+
+	<script type="text/javascript">
+		
+
+		jQuery(function($){
+				
+			$.supersized({
+				
+				// Functionality
+				slideshow               :   1,			// Slideshow on/off
+				autoplay				:	0,			// Slideshow starts playing automatically
+				start_slide             :   1,			// Start slide (0 is random)
+				stop_loop				:	1,			// Pauses slideshow on last slide
+				random					: 	0,			// Randomize slide order (Ignores start slide)
+				slide_interval          :   4000,		// Length between transitions
+				transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				transition_speed		:	1000,		// Speed of transition
+				new_window				:	1,			// Image links open in new window/tab
+				pause_hover             :   0,			// Pause slideshow on hover
+				keyboard_nav            :   1,			// Keyboard navigation on/off
+				performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+				image_protect			:	1,			// Disables image dragging and right click with Javascript
+																   
+				// Size & Position						   
+				min_width		        :   0,			// Min width allowed (in pixels)
+				min_height		        :   0,			// Min height allowed (in pixels)
+				vertical_center         :   1,			// Vertically center background
+				horizontal_center       :   1,			// Horizontally center background
+				fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+				fit_portrait         	:   0,			// Portrait images will not exceed browser height
+				fit_landscape			:   0,			// Landscape images will not exceed browser width
+																   
+				// Components							
+				slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				thumb_links				:	1,			// Individual thumb links for each slide
+				thumbnail_navigation    :   0,			// Thumbnail navigation
+				slides 					:  	[			// Slideshow Images, image_small attribute is used to load the mobile version image, main_title attribute is used to add the image tile div
+														{main_title : ".home_slider_title1", slide_interval: 3000 },
+														{main_title : ".home_slider_title2", slide_interval: 3000},  
+														{main_title : ".home_slider_title3", slide_interval: 3500},
+														{image : 'images/home_slider/image1.jpg', image_small : 'images/home_slider/image1_s.jpg', main_title : ".home_slider_title4", slide_interval: 2500},
+														{image : 'images/home_slider/image2.jpg', image_small : 'images/home_slider/image2_s.jpg', main_title : ".home_slider_title5", slide_interval: 5500}
+												],
+												
+				// Theme Options			   
+				progress_bar			:	1,			// Timer for each slide							
+				mouse_scrub				:	0
+						
+				});
+			});			
+
+	</script>
+
+
+
+
+
+
+    <script>
+	
+		/* Site Main plug-in initilize */
+		
+		$(document).ready(function(){
+
+			jQuery(function($){
+				$("body").mainFm({
+					
+					/* Set the opening page. 
+					leave it blank value if you need to show the home page as a opening page*/
+					currentPage : "!home",
+					
+					/* FlexSlider slideshow speed */
+					slideshowSpeed : 5000,
+					
+					homeSliderThumbnail : false
+					
+				});
+			});		
+
+			
+
+// Email submit action			
+			$("#email_submit").click(function() { 
+									
+				$('#reply_message').removeClass();
+				$('#reply_message').html('')
+				var regEx = "";	 
+								
+				// validate Name				
+				var name = $("input#name").val();  
+				regEx=/^[A-Za-z .'-]+$/; 
+				if (name == "" || name == "Name"  || !regEx.test(name)) { 
+					$("input#name").val(''); 
+					$("input#name").focus();  
+					return false;  
+				}
+				
+				// validate Email						  
+				var email = $("input#email").val();  
+				regEx=/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;											
+				if (email == "" || email == "Email" || !regEx.test(email)) { 
+					$("input#email").val(''); 
+					$("input#email").focus();  
+					return false;  
+				}  
+				
+				// validate comment			
+				var comments = $("textarea#comments").val(); 
+				if (comments == "" || comments == "Comments..." || comments.length < 2) { 
+					$("textarea#comments").val(''); 
+					$("textarea#comments").focus();  
+					return false;  
+				}  
+									
+				var dataString = 'name='+ $("input#name").val() + '&email=' + $("input#email").val() + '&comments=' + $("textarea#comments").val();									
+				$('#reply_message').addClass('email_loading');
+				
+				// Send form data to mailer.php 
+				$.ajax({
+					type: "POST",
+					url: "mailer.php",
+					data: dataString,
+					success: function() {
+						$('#reply_message').removeClass('email_loading');
+						$('#reply_message').addClass('list3');
+						$('#reply_message').html("Mail sent sucessfully")
+						.hide()
+						.fadeIn(1500);
+							}
+						});
+				return false;
+				
+			});
+			
+				
+		});
+		
+		
+	</script>
+
+    
+</head>
+
+<!--<div id="tst" style="position:fixed; top:0; left:0; width:150px; color:#FFF; background-color:#066; z-index:11254785820"> a </div>-->
+
+<body>
+
+
+<div class="pageFade" > </div>
+
+<!--
+Header Navigation Area
+-->
+
+
+<div class="header fadeAfterLoad">
+    <div class="navbar  navbar-fixed-top" >
+        <div class="navbar-inner noshadow" >
+          
+          <div class="container">
+              <!-- Place your logo here -->
+              <div class="logo" >
+                  <a href="#!home"><img src="images/logo.png" class="lowResSupport" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+              </div>
+          
+              <div class="navAlign">
+                  <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="nav-collapse collapse">
+                      <ul class="nav">
+                          <!--  Add require site page navigation -->                    
+                          <li><a href="#!home" class="first active"> <i class="icon-globe"></i> HOME</a></li> 
+                          <li><a href="#!product"> <i class="icon-cloud-download"></i> PRODUCT </a></li>
+                          <li><a href="#!team"> <i class="icon-cog"></i> TEAM</a></li>
+                          <li><a href="#!portfolio"> <i class="icon-picture"></i> PORTFOLIO</a></li>
+                          <li><a href="#!blog"> <i class="icon-edit"></i> blog</a></li>
+                          <li><a href="#!contactus" class="last"> <i class="icon-pencil"></i> CONTACT US</a></li>                                          
+                      </ul>
+                  </div>
+                
+              </div>
+          
+          </div>            
+              
+        </div>
+    </div>    
+</div>    
+
+
+<!--
+Bottom navigation - Use to Scroll the page Top and Bottom area 
+-->
+
+<div class="nextPreviousPage fadeAfterLoad">
+	<div class="previousPage autoPosition"><span> <i class="icon-chevron-up icon-2x"></i>  </span></div>
+	<div class="nextPage autoPosition"> <span>  <i class="icon-chevron-down icon-2x"></i> </span></div>
+</div>
+
+
+<!-- Share button 
+That place on right center of the page
+-->
+
+
+<div class=" topPosition fadeAfterLoad" >    
+	<a href="#shareLinks"  class="single_image socialLink"  > <i class="icon-share icon-2x"></i> </a>
+    <div class="popupContent">
+        <div id="shareLinks">
+			<ul class="social_bookmarks">                  
+                <li ><a ><i class="icon-adn"></i></a></li>
+                <li ><a ><i class="icon-android"></i></a></li>
+                <li ><a ><i class="icon-apple"></i></a></li>
+                <li ><a ><i class="icon-bitbucket"></i></a></li>
+                <li ><a ><i class="icon-bitbucket-sign"></i></a></li>
+                <li ><a ><i class="icon-bitcoin"></i></a></li>
+                <li ><a ><i class="icon-btc"></i></a></li>
+                <li ><a ><i class="icon-css3"></i></a></li>
+                <li ><a ><i class="icon-dribbble"></i></a></li>
+                <li ><a ><i class="icon-dropbox"></i></a></li>
+                <li ><a ><i class="icon-facebook"></i></a></li>
+                <li ><a ><i class="icon-facebook-sign"></i></a></li>
+                <li ><a ><i class="icon-flickr"></i></a></li>
+                <li ><a ><i class="icon-foursquare"></i></a></li>
+                <li ><a ><i class="icon-github"></i></a></li>
+                <li ><a ><i class="icon-github-alt"></i></a></li>
+                <li ><a ><i class="icon-github-sign"></i></a></li>
+                <li ><a ><i class="icon-gittip"></i></a></li>
+                <li ><a ><i class="icon-google-plus"></i></a></li>
+                <li ><a ><i class="icon-google-plus-sign"></i></a></li>
+                <li ><a ><i class="icon-html5"></i></a></li>
+                <li ><a ><i class="icon-instagram"></i></a></li>
+                <li ><a ><i class="icon-linkedin"></i></a></li>
+                <li ><a ><i class="icon-linkedin-sign"></i></a></li>
+                <li ><a ><i class="icon-linux"></i></a></li>
+                <li ><a ><i class="icon-maxcdn"></i></a></li>
+                <li ><a ><i class="icon-pinterest"></i></a></li>
+                <li ><a ><i class="icon-pinterest-sign"></i></a></li>
+                <li ><a ><i class="icon-renren"></i></a></li>
+                <li ><a ><i class="icon-skype"></i></a></li>
+                <li ><a ><i class="icon-stackexchange"></i></a></li>
+                <li ><a ><i class="icon-trello"></i></a></li>
+                <li ><a ><i class="icon-tumblr"></i></a></li>
+                <li ><a ><i class="icon-tumblr-sign"></i></a></li>
+                <li ><a ><i class="icon-twitter"></i></a></li>
+                <li ><a ><i class="icon-twitter-sign"></i></a></li>
+                <li ><a ><i class="icon-vk"></i></a></li>
+                <li ><a ><i class="icon-weibo"></i></a></li>
+                <li ><a ><i class="icon-windows"></i></a></li>
+                <li ><a ><i class="icon-xing"></i></a></li>
+                <li ><a ><i class="icon-xing-sign"></i></a></li>
+                <li ><a ><i class="icon-youtube"></i></a></li>
+                <li ><a ><i class="icon-youtube-play"></i></a></li>
+				<li ><a ><i class="icon-youtube-sign"></i></a></li>
+			</ul>          
+        </div>
+        
+    </div>  
+</div>
+    
+                
+
+<!-- pgScrollUp navigation used to scroll the page to top position, Currently its hide in this template.
+If you need this button just remove the comment code
+-->
+
+<!--<div class="pgScrollUp"></div>-->
+
+ 
+ <!-- Supersized home page slider show Arrow Navigation-->
+<div id="superNav" >
+	<a id="prevslide" class="load-item" ></a>
+	<a id="nextslide" class="load-item" ></a>
+ 	<a id="play-button"  class="load-item" ><img id="pauseplay" src="images/supersized/pause.png" alt="image text" /></a>
+</div> 
+
+
+
+
+<!-- Homepage supersized slideshow -->
+
+<div class="contentWrapper full-Height homeSlider white_nav "  data-id="!home"  >
+	<div class="homepage_con">
+    	
+        <!-- Homepage fullscreen slideshow Title text 1 -->
+		<div class="home_slider_title1 sliderStyle1 textAlignCenter"  >
+        	<h1 class="bold_weight"><span class="highlight_color2">Fit</span><span class="highlight_color1">Plain</span></h1>
+     	   	<h2><span class="light_color">HTML5 One page Creative Template</span></h2>
+		</div>
+    	
+        
+         <!-- Homepage fullscreen slideshow Title text 2 -->
+         <div class="home_slider_title2 sliderStyle1 textAlignCenter" >
+         	<h2 class="bold_weight"><span class="white_color">Best usage for</span></h2>
+    		<h2><span class="light_color">Creative Studio, App landing page</span></h2>
+            <h2><span class="light_color"> and Personal portfolio </span></h2>
+		</div>
+        
+        
+         <!-- Homepage fullscreen slideshow Title text 3 -->
+		<div class="home_slider_title3 sliderStyle1 darkStyle textAlignCenter" >         	
+    		<h2 class="light_color">Bootstrap Frame work, Retina Ready</h2>
+            <h2 class="light_color">supersized Fullscreen Slideshow</h2>
+			<h2 class="light_color">Parallax Effect, Font Awesome</h2>            
+		</div>
+        
+         <!-- Homepage fullscreen slideshow Title text 3 -->
+		<div class="home_slider_title4 sliderStyle1 darkStyle textAlignCenter " >      	
+    		<h1 class="bold_weight highlight_color2 textShadow">Easy to navigate the pages</h1>
+     	   	<h1 class="textShadow">Using bottom arrows</h1>
+           	<div class="textShadow"> 
+            	<hr>
+            	<i class="icon-chevron-up icon-2x right_spacing"></i>
+                <i class="icon-chevron-down icon-2x"></i>
+            </div>         
+		</div>    
+    	
+        
+         <!-- Homepage fullscreen slideshow Title text 4 -->
+        <div class="home_slider_title5 sliderStyle1 darkStyle textAlignCenter" >
+        	<h1 class="bold_weight textShadow"><span class="highlight_color2">Fit</span><span class="highlight_color1">Plain</span></h1>
+     	   	<h2><span class="dark_color">Now it scroll automatically to</span></h2>
+            <h2><span class="dark_color">Product page :)</span></h2>
+            <h2><span class="bold_weight highlight_color2">First Time only</span></h2>
+            <!-- Note :
+            data-gotoPage attribute is used to define the page name that scroll after this slideshow finish, 
+            data-oneTime attribute is used to enable/disable the first time scroll option -->
+            <div class="separator_mini" data-gotoPage="!product" data-oneTime="yes" ></div>
+		</div>
+   
+  </div>  
+</div>
+
+
+
+
+<!-- Client  -->
+
+  
+<!-- Parallax content data-src attribute is used to set the larg size image for desktop and 
+	 data-src-small is used to set the small size image for mobile device --> 
+        
+<div class="fullWidth darkStyle parallax" data-src="images/background/image1.jpg" data-src-small="images/background/image1_s.jpg" >
+	<div class="parallaxPattern"></div>
+	<div class="container" >
+		<div class="table_left" >
+        	<span class="title_text" >Our Clients</span>
+			<hr>
+			<a class="imgBtn">	<img src="images/client1.png" alt="image name" >	</a>
+			<a class="imgBtn">	<img src="images/client2.png" alt="image name" >	</a>
+			<a class="imgBtn">	<img src="images/client3.png" alt="image name" >	</a>
+			<a class="imgBtn">	<img src="images/client4.png" alt="image name" >	</a>
+			<hr> 
+		</div>
+	</div>
+</div>
+
+
+
+ 
+<!-- Product page -->
+
+<div class="contentWrapper full-Height darkStyle backGround mobileSpacing"  data-id="!product" >
+
+    <div class="container mobileSpacing">       
+    	<div class="row-fluid"> 
+        	 <div class="span12" >
+                <hr>
+                <h1 class="title_text">FitPlain - Look clean and Prefect Design</h1> 
+            </div>
+        </div>
+	</div>
+    
+     <hr class="borderTop light_border" />
+    
+	<div class="container">
+        <div class="row-fluid">
+                    	
+            <div class="span7 alignRight" >
+                <hr>
+                <div class="desktop_slideshow">
+    
+                    <div class="flexSlideshow " >
+                            <ul class="slides"> 
+                                <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/desktop_img1.jpg" title="Some text">image</a></li>
+                                <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/desktop_img2.jpg" title="Some text">image</a></li>
+                                <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/desktop_img3.jpg" title="Some text">image</a></li>
+                                <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/desktop_img4.jpg" title="Some text">image</a></li>
+                            </ul>
+                    </div> 
+                </div>
+                <hr class="slide_bottomSpace">                        
+            </div>
+                
+            <div class="span5">                
+				<hr>
+                <h2>Display portfolio images inside the Monitor frame</h2>
+                <p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. sed diam nonummy nibh euismod tincidunt. </p>
+                
+                <p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. sed diam nonummy nibh euismod tincidunt.</p>	
+                
+                <p>Sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat,tincidunt  sed diam nonummy nibh euismod tincidunt tlaoreet dolore magna aliquam erat tlaoreet dolore magna aliquam erat.</p>			
+                
+                <div class="separator"> </div>
+                <a class="button medium highlight_bgColor1">BUY NOW</a>
+                <div class="separator"> </div>                   
+                
+                <span class="share"><span>share</span></span>
+                <ul class="social_bookmarks">                 
+                    <li ><a ><i class="icon-facebook"></i></a></li>
+                    <li ><a ><i class="icon-twitter"></i></a></li>
+                    <li ><a ><i class="icon-youtube"></i></a></li>
+                    <li ><a ><i class="icon-linkedin"></i></a></li>
+                    <li ><a ><i class="icon-google-plus"></i></a></li>
+                    <li ><a ><i class="icon-flickr"></i></a></li>                
+                </ul>
+                  
+                <div class="separator"> </div>
+
+                <span class="share"><span>Tags</span></span>
+                <ul class="tag">                    
+                    <li>windows</li>
+                    <li>ios</li>
+                    <li>Android</li>
+                </ul>
+                <hr>
+  
+        	</div>
+    	</div>
+	 
+    </div>  
+    
+  	<hr class="borderBottom light_border" />  
+          
+</div>
+	
+
+<!-- Product page section2
+Note: 
+data-continue-page attribute is used to define this page that belong to the header menu
+-->
+
+<div class="contentWrapper full-Height darkStyle backGround mobileSpacing" data-continue-page="!product"  data-id="!product_section2" >	
+	<hr> 
+    <div class="container"> 
+		<div class="row-fluid">        		
+            <div class="span12" >
+              <img src="images/product_slideshow/product_img4_black.jpg" alt="image name" />  
+            </div>
+         </div>
+	</div>
+    
+    <hr class="borderTop" /> 
+    
+	<div class="container">       
+        	<div class="row-fluid">                
+				<div class="span1"></div>
+                <div class="span10 text-center">
+                	<hr>
+                    <h1 class="title_text">Make simple, clean and Contract</h1>
+                    <hr>
+                    <h3 >Show your product with details</h3>
+                    <p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+        
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>			
+                    
+                    <div class="separator"> </div>
+                    <a class="button medium highlight_bgColor2">BUY NOW</a>
+                    <div class="separator"> </div>
+                </div>                
+            </div>         
+			<hr class="separator_min"/>               
+    </div>      
+</div>
+
+
+<div class="contentWrapper full-Height darkStyle backGround" data-continue-page="!product"  data-id="!product_section3" >
+
+	<hr class="separator_min" />   
+    <hr class="borderTop light_border" /> 
+        
+    <div class="container"> 
+        <div class="row-fluid">
+        
+        	<div class="span7 " >            
+                <hr>
+                <h2 class="title_text">Show product features</h2>
+                <p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+            
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>			
+                
+                <hr class="separator_min" />
+                
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h3>
+                            Show your product performance using animating items
+                        </h3>
+                   </div> 
+                    <div class="span6">
+                        <div class="graph_container">
+                            <ul>
+                                <li data-level="80%" ><a></a> <span>Web Design </span></li>
+                                <li data-level="70%"><a></a> <span>Software Development</span></li>
+                                <li data-level="90%"><a></a> <span>Branding & Identity</span></li>
+                            </ul>
+                        </div>	
+                   </div>                   
+               </div> 
+               
+                <hr class="separator_min" />
+                
+               <!-- About knod visit the http://anthonyterrien.com/knob/ site -->
+               
+               <div class="clearfix"></div>
+                                  
+                <div class="alignLeft">
+                    <input class="knob" data-readOnly="true" data-width="100" data-height="100" data-linecap="round" data-angleOffset="45" data-fgColor="#28bef0" data-skin="tron" data-thickness=".2" value="75">
+                </div>
+                <div class="alignLeft left_spacing">
+                    <h2 >Highly Performance</h2> 
+                    <hr>
+                </div>                     	
+               
+               <div class="clearfix"></div>
+               
+               <div class="alignRight">
+                    <input class="knob" data-readOnly="true" data-width="100" data-height="100" data-linecap="round" data-angleOffset="45" data-fgColor="#fa7373" data-thickness=".3" value="90">
+                </div>
+                <div class="alignRight right_spacing">
+                    <h2>Response & Resistance</h2> 
+                    <hr>
+                </div>
+                <hr>
+                           
+        	</div>
+                
+            <div class="span5" >
+                <img src="images/product_image2_black.jpg" alt="image name" />             
+            </div>
+                
+		</div>
+        
+    </div>
+	<hr class="borderBottom light_border" />
+	<div class="separator_max"> </div>      
+</div>
+
+
+
+<div class="contentWrapper full-Height darkStyle backGround"  data-continue-page="!product" data-id="!product_section4" >
+
+	 <div class="container mobileSpacing">         
+        <div class="row-fluid">
+            <div class="span12 text-center" >
+                <hr>
+                <h1 class="title_text">Best way to display the product</h1>
+                <h2>it's completely responsive and Retina ready</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+	<div class=" fullWidth removePadding" > 
+
+        <div class="container mobileSpacing"> 
+            <hr>    
+            <div class="row-fluid">  
+                <div class="span1"></div> 
+                <div class="span10" >
+                    <div class="flexSlideshow " >
+                          <ul class="slides"> 
+                              <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/product_img2_black.jpg" title="Some text">image</a></li>
+                              <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/product_img1_black.jpg" title="Some text">image</a></li>
+                              <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/product_img3_black.jpg" title="Some text">image</a></li>
+                              <li><a  class="lazyload scale-with-grid" href="images/product_slideshow/product_img4_black.jpg" title="Some text">image</a></li>
+                          </ul>
+                    </div> 
+                    <hr class="slide_bottomSpace">
+                </div>
+                    
+                <div class="span1"></div>
+            	<div class="span10">                    
+					<h3 >Easy to scroll between the pages using bottom arrow</h3>
+                    <p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+        
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>			
+                    
+                    <div class="separator"> </div>
+                    <a class="button medium highlight_bgColor2">BUY NOW</a>
+                    <div class="separator"> </div>
+            	</div>
+                      
+                <div class="span1"></div>
+                <div class="span10">                    
+                    <span class="share"><span>share</span></span>
+                    <ul class="social_bookmarks">                 
+                        <li ><a ><i class="icon-facebook"></i></a></li>
+                        <li ><a ><i class="icon-twitter"></i></a></li>
+                        <li ><a ><i class="icon-tumblr"></i></a></li>
+                        <li ><a ><i class="icon-youtube"></i></a></li>
+                        <li ><a ><i class="icon-linkedin"></i></a></li>
+                        <li ><a ><i class="icon-google-plus"></i></a></li>
+                        <li ><a ><i class="icon-flickr"></i></a></li>                
+                        <li ><a ><i class="icon-pinterest"></i></a></li>
+                        <li ><a ><i class="icon-weibo"></i></a></li>
+                    </ul>
+                      
+                    <div class="separator"> </div>
+        
+                    <span class="share"><span>Tags</span></span>
+                    <ul class="tag">                    
+                        <li>windows</li>
+                        <li>ios</li>
+                        <li>Android</li>
+                    </ul>              
+                </div>                
+            </div>                      
+        </div>
+	</div>
+    
+	<div class="separator_max"> </div>
+      
+</div>
+
+
+
+
+<!-- Client  -->
+  
+<!-- Parallax content data-src attribute is used to set the larg size image for desktop and 
+	 data-src-small is used to set the small size image for mobile device --> 
+        
+<div class="fullWidth darkStyle parallax" data-src="images/background/image2.jpg" data-src-small="images/background/image2_s.jpg" >
+	<div class="parallaxPattern"></div>
+	<div class="container" >
+		<div class="table_left" >
+        	<h2 class="textAlignCenter highlight_color1 bold_weight" >Creating ideas and building brands that <br>Truly matter to people</h2>
+            <h3 class="textAlignCenter highlight_color2" >we follow what we plan</h3>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- Services Page -->
+    
+<div class="contentWrapper full-Height darkStyle backGround"  data-id="!team" >  
+	
+    
+	 <div class="container mobileSpacing">         
+        <div class="row-fluid">
+            <div class="span12" >
+                <hr>
+                <h1 class="title_text">Our Team</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+   <hr class="borderTop light_border noSpacing" />
+   
+	<div class="fullWidth removePadding"  > 
+     
+        <div class="container mobileSpacing">
+
+            <hr>
+                   
+            <h3>Started by Designers and Developers</h3>
+            
+            <span class="mini_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed <a>diam nonummy nibh</a> euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</span>
+            
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            <hr>        
+		</div>
+      
+         <div class="container mobileSpacing">      
+            <div class="row-fluid">
+                <ul class="thumbnails">
+                    <li class="span3">
+                        <div class="thumbnail img_place" >
+                            <img src="images/about_image1.jpg" alt="image name" >                          
+                        </div> 
+                        <div class="separator_mini"></div> 
+                        <h4><a>Mark Tylor</a></h4>
+                        <h6>Designer & Developer</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ad minim veniam.</p>
+                        <ul class="social_bookmarks">                 
+                            <li ><a ><i class="icon-facebook"></i></a></li>
+                            <li ><a ><i class="icon-twitter"></i></a></li>
+                            <li ><a ><i class="icon-youtube"></i></a></li>
+                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                        </ul>
+                        <hr>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail img_place" >
+                            <img src="images/about_image2.jpg" alt="image name" >                          
+                        </div> 
+                        <div class="separator_mini"></div> 
+                        <h4><a>Stephen Fleming</a></h4>
+                        <h6>Graphic Designer</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ad minim veniam.</p>
+                         <ul class="social_bookmarks">                 
+                            <li ><a ><i class="icon-facebook"></i></a></li>
+                            <li ><a ><i class="icon-twitter"></i></a></li>
+                            <li ><a ><i class="icon-youtube"></i></a></li>
+                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                        </ul>
+                        <hr>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail img_place" >
+                            <img src="images/about_image3.jpg" alt="image name" >                          
+                        </div> 
+                         <div class="separator_mini"></div> 
+                        <h4><a>Lisa Michale</a></h4>
+                        <h6>Relationship Manager</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ad minim veniam.</p>
+                         <ul class="social_bookmarks">                 
+                            <li ><a ><i class="icon-facebook"></i></a></li>
+                            <li ><a ><i class="icon-twitter"></i></a></li>
+                            <li ><a ><i class="icon-youtube"></i></a></li>
+                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                        </ul>
+                        <hr>
+                    </li>
+                    <li class="span3">
+                        <div class="thumbnail img_place" >
+                            <img src="images/about_image4.jpg" alt="image name" >                        
+                        </div>
+                        <div class="separator_mini"></div> 
+                        <h4><a>Michale clarke</a></h4>
+                        <h6>Project Manager</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ad minim veniam.</p>
+                         <ul class="social_bookmarks">                 
+                            <li ><a ><i class="icon-facebook"></i></a></li>
+                            <li ><a ><i class="icon-twitter"></i></a></li>
+                            <li ><a ><i class="icon-youtube"></i></a></li>
+                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                        </ul>
+                        <hr>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+
+
+<div class="contentWrapper full-Height darkStyle backGround"  data-continue-page="!team" data-id="!service" >
+
+	<div class="container mobileSpacing">         
+        <div class="row-fluid">
+            <div class="span12" >
+                <hr>
+                <h1 class="title_text">Services</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+   <hr class="borderTop light_border noSpacing" />
+
+	<div class="fullWidth removePadding"  > 
+     
+        <div class="container mobileSpacing">
+        	
+            <hr>
+            
+            <div class="row-fluid">
+            
+                <div class="span12">
+                    <a class="circleHolder alignCenter single_image" data-title='<h5 >Mini description about project</h5>'  href="images/portfolio/image5.jpg" target="_self" >
+                        <div class="flipPanel smallCircle" >
+                            <div class="circle front service_icon" >
+                                <i class="icon-globe"> </i>
+                            </div>
+                            <div class="circle back">
+                                <div class="padTopLarge">
+                                    <h5 class="light_color">click to see</h5>
+                                    <h5 class="light_color"><strong>The project</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="description">
+                            <h4>Web & Print design </h4>
+                            <p>nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
+                        </div>
+                    </a>
+                       
+                           
+                    <a class="circleHolder alignCenter single_image" data-title='<h5 >Load YouTube and Vimeo video</h5>'  href="http://www.youtube.com/watch?v=QVd_QZ3ZlM8" target="_self" > 
+                        <div class="flipPanel smallCircle" >
+                            <div class="circle front service_icon_2">
+                                <i class="icon-gears"> </i>
+                            </div>
+                            <div class="circle back">
+                                <div class="padTopLarge">
+                                    <h5 class="light_color">click to see</h5>
+                                    <h5 class="light_color"><strong>The project</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="description">
+                            <h4>Software Development </h4>
+                            <p >nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
+                        </div>
+                    </a>
+                      
+                           
+                    <a class="circleHolder alignCenter single_image" data-title='<h5>Mini description about project, eorem ipsum dolor sit amet, consectetur adipisicing elit</h5>'  href="images/portfolio/image6.jpg" target="_self" >
+                        <div class="flipPanel smallCircle" >
+                            <div class="circle front service_icon" >
+                             <i class="icon-mobile-phone"> </i>
+                            </div>
+                            <div class="circle back">
+                                <div class="padTopLarge">
+                                    <h5 class="light_color">click to see</h5>
+                                    <h5 class="light_color"><strong>The project</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="description">
+                            <h4>Mobile Application</h4>
+                            <p>nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
+                        </div>
+                    </a>   
+                      
+        
+                    <a class="circleHolder alignCenter single_image" data-title='<h5 >Mini description about project</h5>'  href="images/portfolio/image7.jpg" target="_self" >  
+                        <div class="flipPanel smallCircle" >
+                            <div class="circle front service_icon_2" >
+                                <i class="icon-trophy"> </i>
+                            </div>
+                            <div class="circle back">
+                                <div class="padTopLarge">
+                                    <h5 class="light_color">click to see</h5>
+                                    <h5 class="light_color"><strong>The project</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="description">
+                            <h4>Branding & Identity</h4>
+                            <p >nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
+                        </div>
+                    </a>    
+                         
+                    
+                    <a class="circleHolder alignCenter single_image"  data-title='<h5 >Load YouTube and Vimeo video</h5>'  href="http://player.vimeo.com/video/45778774?portrait=0" target="_self" > 
+                        <div class="flipPanel smallCircle" >
+                            <div class="circle front service_icon_2" >
+                                <i class="icon-film"> </i>
+                            </div>
+                            <div class="circle back">
+                                <div class="padTopLarge">
+                                    <h5 class="light_color">click to see</h5>
+                                    <h5 class="light_color"><strong>The project</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="description">
+                            <h4>Motion <br> Picture</h4>
+                            <p >nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
+                        </div>
+                    </a>  
+                    
+                    
+                    <a class="circleHolder alignCenter single_image" data-title='<h5>Mini description about project, eorem ipsum dolor sit amet, consectetur adipisicing elit</h5>'  href="images/portfolio/image4.jpg" target="_self" >
+                        <div class="flipPanel smallCircle" >
+                            <div class="circle front service_icon_2" >
+                                <i class="icon-gamepad"> </i>
+                            </div>
+                            <div class="circle back">
+                                <div class="padTopLarge">
+                                    <h5 class="light_color">click to see</h5>
+                                    <h5 class="light_color"><strong>The project</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="description">
+                            <h4>Game Development</h4>
+                            <p>nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
+                        </div>
+                    </a>  
+                </div>
+                
+            </div>
+            
+            <hr>
+            
+            <div class="row-fluid">
+            
+                <div class="span5">            
+                    <h3>Our Skill level</h3>
+                    <div class="graph_container">
+                        <ul>
+                            <li data-level="80%" ><a></a> <span>Web Design </span></li>
+
+                            <li data-level="70%"><a></a> <span>Software Development</span></li>
+                            <li data-level="90%"><a></a> <span>Branding & Identity</span></li>
+                            <li data-level="50%" class="last"><a></a> <span>Motion Picture</span></li>
+                        </ul>
+                    </div>
+                     <hr>
+                </div>
+                            
+                <div class="span7">
+                    <h3 >We are working for several fields and Platform</h3>
+                    <p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+        
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+                </div>
+                
+            </div>        
+            
+        </div>
+		<div class="separator_max"></div>
+    </div>
+    
+</div>
+
+
+
+<div class="contentWrapper lightStyle bg_highlight_color1"  > 
+	<hr>
+    <div class="separator"></div>  
+     
+	<div class="container">
+    	<div class="row-fluid">
+        	<div class="span12">
+            	<h4 class="text-center"><a href="plain_features.html" class="hover_alt">Click here to see the availiable features and Short code</a></h4>
+            	<h5 class="text-center"><a href="plain_blog.html" class="hover_alt">Separate pages is aviabile for blog page</a></h5>
+			</div>
+        </div>
+	</div>
+    
+    <hr>
+    <div class="separator"></div>
+
+</div>
+
+
+
+
+
+
+ 
+ <!-- Portfolio Thumbnail/detail content -->             
+<div class="contentWrapper darkStyle backGround full-Height removePadding portfolioPage" data-id="!portfolio"  >
+	
+    <div class="container">
+    	<div class="row-fluid">
+			<div class="span12 ">
+                <hr>
+                <h1 class="textAlignCenter">Portfolio - <span class="highlight_color1">Masonry image gallery</span></h1>
+                <h3 class="textAlignCenter">Detail page display over popup window</h3>
+            </div> 
+			<div class="row-fluid">
+                <div class="span12 "> 
+                	<div class="isotope_option" >   
+                        <section id="options" class="clearfix" >
+                            <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                                <!-- Add portfolio category -->   
+                                <li class="options_title">FILTER :</li>                       
+                                <li>
+                                    <a href="#filter" data-option-value="*" class="selected" >
+                                        <div class="catName"> <span>ALL</span> </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#filter" data-option-value=".web"> 
+                                        <div class="catName"> <span>WEB</span> </div> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#filter" data-option-value=".software"> 
+                                        <div class="catName"> <span>Software</span> </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#filter" data-option-value=".eco"> 
+                                        <div class="catName">  <span>E-Commerce</span> </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                	</div>
+                 </div>
+			</div>             
+                        
+		</div>           	
+     </div>
+
+    
+	<div class="masonry_container" >
+      
+      	<!-- Thumbnail -->
+        <div class="item web" >
+        	<div class="porImgOver" >
+                <img src="images/portfolio/thumb1.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>                        
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li ><a data-fancy="yes" href="#portfolio1" ><i class="icon-info icon-2x"></i></a></li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project detail content. Make sure the id(portfolio1) of this container div must be assign to the href of the thumbnail <a> tag -->
+            <div  class="popupContent" >
+                <div id="portfolio1" class="container darkStyle" >
+                    <div class="row-fluid" >
+                        <div class="span12" >
+                            <h2>This content is display using the fancy box plugin</h2>
+                            <div class="separator"></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid" >
+                        <div class="span7" >
+                        	<!-- Flex Slideshow -->
+                            <div class="flexSlideshow_pop" >
+                                    <ul class="slides"> 
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image1.jpg" title="Some text">image</a></li>
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image2.jpg" title="Some text">image</a></li>
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image3.jpg" title="Some text">image</a></li>
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image4.jpg" title="Some text">image</a></li>
+                                    </ul>
+                            </div>
+                            <hr class="slide_bottomSpace">
+                        </div> 
+                        
+                       <div class="span5">
+                       		<!-- The scrollbar_left class is used to add the scrollbar, 
+                            	If you need to remove the scrollbar just delete the scrollbar_left class 
+                            -->
+                            <div class="addNiceScroll scrollbar_left">
+                            	<h4>Add/remove scrollbar using .scrollbar_left class</h4>
+                                
+                                <hr class="separator_bar" />
+                                <p class="mini_description" >Tonsectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+
+                                 <hr class="separator">                                 
+                                <span class="share"><span>share</span></span>
+                                <ul class="social_bookmarks">                 
+                                    <li ><a ><i class="icon-facebook"></i></a></li>
+                                    <li ><a ><i class="icon-twitter"></i></a></li>
+                                    <li ><a ><i class="icon-tumblr"></i></a></li>
+                                    <li ><a ><i class="icon-youtube"></i></a></li>
+                                    <li ><a ><i class="icon-linkedin"></i></a></li>
+                                    <li ><a ><i class="icon-google-plus"></i></a></li>
+                                </ul>
+                                  
+                                <div class="separator"> </div>
+                    
+                                <span class="share"><span>Tags</span></span>
+                                <ul class="tag">                    
+                                    <li>windows</li>
+                                    <li>ios</li>
+                                    <li>Android</li>
+                                </ul> 
+                                
+                                <hr class="separator">  
+                                    
+                                <hr class="separator_bar" />
+            
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+                        
+                        		<p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+            
+                        		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+                        
+                        		<p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+            
+                        		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+							</div>
+                        </div>                   
+                    </div>            		
+                </div>
+            </div>
+        
+            <!-- End Project detail -->            
+            
+        </div>
+        
+          
+        <div class="item web" >
+        	<!-- Thumbnail -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb2.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                         	<ul class="social_bookmarks_2x alignRight">  
+                            	<li ><a data-fancy="yes" href="#portfolio2" ><i class="icon-info icon-2x"></i></a></li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            
+			<!-- Project detail content. Make sure the id(portfolio2) of this container div must be assign to the href of the thumbnail <a> tag -->
+            <div  class="popupContent" >
+                <div id="portfolio2" class="container darkStyle" >
+                    <div class="row-fluid" >
+                        <div class="span1" ></div>
+                        <div class="span10" >
+                            <h2>Application screen shot images - Add title text</h2>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row-fluid" >
+                        <div class="span1" ></div>
+                        <div class="span10" >
+                            <div class="flexSlideshow_pop" >
+                                    <ul class="slides"> 
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image1_a.jpg" title="Some text">image</a></li>
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image1_b.jpg" title="Some text">image</a></li>
+                                        <li><a  class="lazyload scale-with-grid" href="images/portfolio/image1_c.jpg" title="Some text">image</a></li>
+                                    </ul>
+                            </div>
+                            <hr class="slide_bottomSpace">
+                        </div> 
+                    </div>  
+                    
+                    <div class="row-fluid" >
+						<div class="span1" ></div>
+                       	<div class="span10">
+                        	<div class="addNiceScroll scrollbar_bottom">
+                            	<h3>You can Add or remove the scrollbar using .scrollbar_bottom class</h3>
+                                
+                                <hr class="separator_bar" />
+                                
+                                <div class="row-fluid"> 
+                                    <div class="span7">
+                                        Tonsectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.
+                                        <p class="mini_description" >Euismod adipiscing elit, sed diam nonummy,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+                                    
+                                    <div class="span5">                               
+                                        <span class="share"><span>share</span></span>
+                                        <ul class="social_bookmarks">                 
+                                            <li ><a ><i class="icon-facebook"></i></a></li>
+                                            <li ><a ><i class="icon-twitter"></i></a></li>
+                                            <li ><a ><i class="icon-tumblr"></i></a></li>
+                                            <li ><a ><i class="icon-youtube"></i></a></li>
+                                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                                        </ul>
+                                          
+                                        <div class="separator"> </div>
+                            
+                                        <span class="share"><span>Tags</span></span>
+                                        <ul class="tag">                    
+                                            <li>windows</li>
+                                            <li>ios</li>
+                                            <li>Android</li>
+                                        </ul> 
+                                    
+                                    </div>
+                                </div> 
+                                    
+                                <hr class="separator_bar" />
+            
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+                        
+                        		<p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+            
+                        		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+                        
+                        		<p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+            
+                        		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+							</div>                            
+                            
+                        </div>                   
+                    </div>            		
+                </div>
+            </div>
+            
+            
+            <!-- End Project detail -->
+            
+            
+        </div>
+          
+        <div class="item web" >
+        	<!-- Thumbnail -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb3.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li ><a data-fancy="yes" href="#portfolio3" ><i class="icon-info icon-2x"></i></a></li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            
+           <!-- Project detail content. Make sure the id(portfolio2) of this container div must be assign to the href of the thumbnail <a> tag -->
+            <div  class="popupContent" >
+                    <div id="portfolio3" class="container darkStyle" >
+                        <div class="row-fluid" >
+                            <div class="span7" >
+                                <div class="addVideo video_content "  data-url="http://vimeo.com/45778774" > 
+                                    <div class="video_hover"></div>
+                                    <img class="scale-with-grid" src="images/video_img1.jpg"  alt="image name" />
+                                </div>
+                                <hr>
+								<hr>
+                            </div> 
+                            
+                           <div class="span5">
+                                	<h4>Show video with description without scrollbar</h4>
+                                
+                                    <hr class="separator_bar" />
+                                    <p class="mini_description" >Tonsectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+    
+                                     <hr class="separator">                                 
+                                    <span class="share"><span>share</span></span>
+                                    <ul class="social_bookmarks">                 
+                                        <li ><a ><i class="icon-facebook"></i></a></li>
+                                        <li ><a ><i class="icon-twitter"></i></a></li>
+                                        <li ><a ><i class="icon-tumblr"></i></a></li>
+                                        <li ><a ><i class="icon-youtube"></i></a></li>
+                                        <li ><a ><i class="icon-linkedin"></i></a></li>
+                                        <li ><a ><i class="icon-google-plus"></i></a></li>
+                                    </ul>
+                                      
+                                    <div class="separator"> </div>
+                        
+                                    <span class="share"><span>Tags</span></span>
+                                    <ul class="tag">                    
+                                        <li>windows</li>
+                                        <li>ios</li>
+                                        <li>Android</li>
+                                    </ul> 
+                                    
+                                    <hr class="separator">  
+                                        
+                                    <hr class="separator_bar" />
+                                
+                                    <p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+                                    
+                                    <p>If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>	
+                            </div>                   
+                        </div>            		
+                    </div>
+            </div>
+            
+            <!-- End Project detail -->
+            
+            
+        </div>
+            
+		<div class="item web" >
+        	<div class="porImgOver" >
+                <img src="images/portfolio/thumb4.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li ><a data-fancy="yes" href="#portfolio4" ><i class="icon-info icon-2x"></i></a></li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project detail -->
+            <div  class="popupContent" >
+                    <div id="portfolio4" class="container darkStyle" >
+                        <div class="row-fluid" >
+                            <div class="span7" >
+                                <a  class="lazyload_single scale-with-grid" href="images/portfolio/image10.jpg" title="Some text">image</a>
+                                <hr>
+								<hr>
+                            </div> 
+                            
+                           <div class="span5">
+                           		<h4>Show static image on the left side without scrollbar</h4>
+                                	
+                                If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.
+                                    
+                           		<p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
+                
+                           		<p class="mini_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat</p>	
+                            </div>                   
+                        </div>            		
+                    </div>
+            </div>
+            
+            
+            <!-- End Project detail -->
+            
+            
+        </div>
+            
+        <div class="item software" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+            	
+                <img src="images/portfolio/thumb5.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image5.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="item software" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+            	
+                <img src="images/portfolio/thumb6.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image6.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item software" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb7.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image7.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item software" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb8.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image8.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item software" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb9.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title" href="images/portfolio/image9.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item eco" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb10.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image10.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       <div class="item eco" > 
+       		<!-- Place large image text inside the .large_img_text class div -->
+			<div class="porImgOver" >
+              <img src="images/portfolio/thumb11.jpg" alt="image text" />
+              <div class="overlay content">
+                  <div class="imageText">
+                      <div class="pad">
+                          <h5>Easy to Read image text</h5>
+                          <h6>Click the top icons to see the details</h6>
+                      </div>
+                  </div>
+                  <div class="navs social_white">
+                    <div class="pad">
+                        <ul class="social_bookmarks_2x alignRight">  
+                            <li>
+                                <a data-fancy="yes" title="Title"  href="images/portfolio/image1.jpg" target="_self">
+                                    <i class="icon-info icon-2x"></i>
+                                    <div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="social_bookmarks">
+                            <li ><a ><i class="icon-facebook"></i></a></li>
+                            <li ><a ><i class="icon-twitter"></i></a></li>
+                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                        </ul>
+						</div>                        
+					</div>                    
+				</div>
+			</div>
+       </div>
+        
+       <div class="item eco" >
+       		<!-- Place large image text inside the .large_img_text class div --> 
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb12.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image2.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item eco" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb13.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image3.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item eco" > 
+        	<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb14.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes"  title="Title"  href="images/portfolio/image4.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+       <div class="item eco" > 
+       		<!-- Place large image text inside the .large_img_text class div -->
+            <div class="porImgOver" >
+                <img src="images/portfolio/thumb15.jpg" alt="image text" />
+                <div class="overlay content">
+                	<div class="imageText">
+                    	<div class="pad">
+                            <h5>Easy to Read image text</h5>
+                            <h6>Click the top icons to see the details</h6>
+                        </div>
+                    </div>
+                    <div class="navs social_white">
+                    	<div class="pad">
+                        	<ul class="social_bookmarks_2x alignRight">  
+                            	<li>
+                                	<a data-fancy="yes" title="Title"  href="images/portfolio/image5.jpg" target="_self">
+                                		<i class="icon-info icon-2x"></i>
+                                    	<div class="large_img_text"><h5 class="light_color">Add simple image and description text with fade animation</h5></div>
+                                	</a>
+                                </li>
+                            </ul>
+                            <ul class="social_bookmarks">
+                                <li ><a ><i class="icon-facebook"></i></a></li>
+								<li ><a ><i class="icon-twitter"></i></a></li>
+								<li ><a ><i class="icon-google-plus"></i></a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- Single video  -->
+
+<div class="contentWrapper full-Height fullWidth darkStyle backGround removePadding"  data-continue-page="!portfolio" data-id="!sample_video"  >
+ 	
+   <div class="container mobileSpacing">         
+        <div class="row-fluid">
+            <div class="span12" >
+                <hr>
+                <h1 class="title_text">Video Preview</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+   <hr class="borderTop light_border noSpacing" />
+    
+    
+    <div class="fullWidth parallax" data-src="images/background/image3.jpg" data-src-small="images/background/image3_s.jpg"  >
+    	<div class="parallaxPattern"></div>
+		<div class="container" >
+            <div class="row alignCenter">
+                <div class="span1"></div>
+                <div class="span10">
+                	 <!-- Add video -->
+                    <div class="addVideo video_content"  data-url="http://vimeo.com/45778774" > 
+                        <div class="video_hover"></div>
+                        <img class="scale-with-grid" src="images/video_img1.jpg" alt="image name" />
+                    </div>
+                </div>
+                 <hr>
+            </div>
+			<hr>
+        </div>        
+	</div>    
+    
+</div>
+ 
+  
+	
+
+
+
+
+
+<!--<div class="fullWidth bg_highlight_color1"  >
+	<div class="container">
+    	<div class="row">
+            <div class="span6 offset3">
+                <div id="twitter-parallax" class="vertical-text">
+                    <div class="twitter-title">Latest tweets</div>
+                    <a class="username" href="http://twitter.com/envato" target="_blank">@envato</a>
+                    <div id="twitter-status"></div>
+                </div>
+            </div>
+    	</div>
+	</div>
+    <hr>
+    <div class="separator"></div>
+</div>-->
+
+
+
+
+
+ <!--Blog page -->             
+<div class="contentWrapper darkStyle backGround full-Height removePadding" data-id="!blog"  >	
+
+	<div class="container mobileSpacing">         
+        <div class="row-fluid">
+            <div class="span12" >
+                <hr>
+                 <h2 class="title_text">Blog page - Keep simple and clean</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+   <hr class="borderTop light_border noSpacing" />
+   
+
+	<div class="fullWidth removePadding"  >   
+     
+		<div class="container mobileSpacing">
+            <hr>
+            
+            <div class="row-fluid">
+                <dl class="accordion_blog" data-autoHide="true" data-openFirstElement="false" >
+                
+    
+                    <!-- Accordion tab -->                
+                    <!-- Blog Post -->
+                    <dt>
+                        <a href="" class="normal">
+                          <div class="acc_heading">                            
+                              <div class="blog_date dark_color">
+                                  <span  class="b_date">30</span>
+                                  <span  class="b_month">May</span> 
+                                  <span  class="b_year">2013</span>                                       
+                              </div>                              
+                                <!-- Heading -->
+                                <span class="b_heading">GreenPaw – Keep Track of Your Marketplace Items </span>
+                            </div>
+                        </a>
+                    </dt>
+                          
+                        <dd>
+                            <div class="acc_content">
+                                <!-- Tab content --> 
+                                <div class="span12" >
+                                    <h2 >GreenPaw – Keep Track of Your Marketplace Items</h2>
+                                    <div class="separator_mini"></div> 
+                                </div>
+                                  
+                                <div class="span7">
+                                    <a  class="lazyload_single scale-with-grid" href="images/slideshow/image3.jpg" data-src-small="images/slideshow/image3_s.jpg" title="Some text">image</a>
+                                    <div class="separator_mini"></div> 
+                                </div>
+                                      
+                                <div class="span4">
+                                    <!-- Blog post Author and data -->
+                                     <a class="list_hover"><i class="icon-user"></i> Aline marke</a>  <br >
+                                     <a class="list_hover"><i class="icon-comment"></i> 6 comments</a>  <br>
+                                     <a class="list_hover"><i class="icon-thumbs-up-alt"></i> 50</a>             
+                          
+                                    <div class="separator_mini"></div>  
+                                   <!-- Social network link -->
+                                    <span class="share"><span>share</span></span>
+                                    <ul class="social_bookmarks">                 
+                                        <li ><a ><i class="icon-facebook"></i></a></li>
+                                        <li ><a ><i class="icon-twitter"></i></a></li>
+                                        <li ><a ><i class="icon-linkedin"></i></a></li>
+                                        <li ><a ><i class="icon-google-plus"></i></a></li>
+                                        <li ><a ><i class="icon-flickr"></i></a></li>                
+                                        <li ><a ><i class="icon-pinterest"></i></a></li>
+                                    </ul>
+                                    
+                                    <div class="separator"> </div>
+    
+                                    <span class="share"><span>Tags</span></span>
+                                    <ul class="tag">                    
+                                        <li>windows</li>
+                                        <li>ios</li>
+                                        <li>Android</li>
+                                    </ul>  
+                        
+                                    <div class="separator_mini"></div> 
+                                </div>
+                                          
+                                <div class="span11" >
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                     <blockquote>
+                                        <p>GreenPaw is an all-in-one package app, designed for authors, by an author. It will display new sales, comments, and changes in rating, and will show you interesting stats, including stats about the whole Marketplace!</p>
+                                        <cite>Adrian Try - envato</cite>
+                                    </blockquote>
+                                    
+                                    <p> Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi nam liber.</p>
+                                    
+                                    <a href="plain_blog.html" target="_self" ><span class="alignLeft button">Continue reading</span></a>               
+                                    <hr>          
+                                </div>
+                                                               
+                            </div>
+                        </dd>
+           
+                              
+                    <!-- Accordion tab -->
+                    <!-- Blog Post -->
+                    <dt>
+                        <a href="" class="normal">
+                          <div class="acc_heading">                            
+                              <div class="blog_date dark_color">
+                                  <span  class="b_date">27</span>
+                                  <span  class="b_month">May</span> 
+                                  <span  class="b_year">2013</span>                                       
+                              </div>                              
+                                <!-- Heading -->
+                                <span class="b_heading">Happy Tenth Anniversary, WordPress!</span>
+                            </div>
+                        </a>
+                    </dt>
+    
+                        <dd>
+                            <div class="acc_content">
+                                <!-- Tab content --> 
+                                <div class="span12" >
+                                    <h2 >Happy Tenth Anniversary, WordPress!</h2>
+                                    <div class="separator_mini"></div> 
+                                </div>
+                                  
+                                <div class="span7">
+                                    <a  class="lazyload_single scale-with-grid" href="images/slideshow/image1.jpg" data-src-small="images/slideshow/image1_s.jpg" title="Some text">image</a>
+                                    <div class="separator_mini"></div> 
+                                </div>
+                                      
+                                <div class="span4">
+                                    <!-- Blog post Author and data -->
+                                     <a class="list_hover"><i class="icon-user"></i> Stepen fourth</a>  <br >
+                                     <a class="list_hover"><i class="icon-comment"></i> 45 comments</a>  <br>
+                                     <a class="list_hover"><i class="icon-thumbs-up-alt"></i> 50</a>             
+                          
+                                    <div class="separator_mini"></div>  
+                                   <!-- Social network link -->
+                                    <span class="share"><span>share</span></span>
+                                    <ul class="social_bookmarks">                 
+                                        <li ><a ><i class="icon-facebook"></i></a></li>
+                                        <li ><a ><i class="icon-twitter"></i></a></li>
+                                        <li ><a ><i class="icon-linkedin"></i></a></li>
+                                        <li ><a ><i class="icon-google-plus"></i></a></li>
+                                        <li ><a ><i class="icon-flickr"></i></a></li>                
+                                        <li ><a ><i class="icon-pinterest"></i></a></li>
+                                    </ul>
+                                    
+                                    <div class="separator"> </div>
+    
+                                    <span class="share"><span>Tags</span></span>
+                                    <ul class="tag">                    
+                                        <li>windows</li>
+                                        <li>ios</li>
+                                        <li>Android</li>
+                                    </ul>  
+                        
+                                    <div class="separator_mini"></div> 
+                                </div>
+                                          
+                                <div class="span11" >
+                                    <p>Today, WordPress celebrates its tenth anniversary and we wanted to take a moment to congratulate them. Ten years is a hefty amount of time by any standard—to put it in web terms, WordPress is older than Facebook, YouTube, Tumblr, Pinterest, and of course Envato.</p>
+                                     <blockquote>
+                                        <p>It was Christmas day of 2006 when I set up my very first WordPress install. I had a slightly early New Year's resolution to try out blogging, and I can remember excitedly realising just how easy it was to get started</p>
+                                        <cite>Collis Ta'eed - Envato Founder & CEO</cite>
+                                    </blockquote>
+                                    
+                                    <a href="plain_blog.html" target="_self" ><span class="alignLeft button">Continue reading</span></a>               
+                                    <hr>          
+                                </div>
+                                                               
+                            </div>
+                        </dd>
+                          
+                         
+                          
+                        <!-- Accordion tab -->
+                        <!-- Blog Post -->
+                        <dt>
+                            <a href="" class="normal">
+                              <div class="acc_heading">                            
+                                  <div class="blog_date dark_color">
+                                      <span  class="b_date">24</span>
+                                      <span  class="b_month">May</span> 
+                                      <span  class="b_year">2013</span>                                       
+                                  </div>                              
+                                    <!-- Heading -->
+                                    <span class="b_heading">Envato's Most Wanted Winners – Lightroom </span>
+                                </div>
+                            </a>
+                        </dt>
+        
+                            <dd>
+                                <div class="acc_content">
+                                    <!-- Tab content --> 
+                                    <div class="span12" >
+                                        <h2>Envato's Most Wanted Winners – Lightroom </h2>
+                                        <div class="separator_mini"></div> 
+                                    </div>
+                                      
+                                    <div class="span7">
+                                        <a  class="lazyload_single scale-with-grid" href="images/slideshow/image2.jpg" data-src-small="images/slideshow/image2_s.jpg" title="Some text">image</a>
+                                        <div class="separator_mini"></div> 
+                                    </div>
+                                          
+                                    <div class="span4">
+                                        <!-- Blog post Author and data -->
+                                        <a class="list_hover"><i class="icon-user"></i> Carel mark</a>  <br >
+                                        <a class="list_hover"><i class="icon-comment"></i> 12 comments</a>  <br>
+                                        <a class="list_hover"><i class="icon-thumbs-up-alt"></i> 20</a>            
+                              
+                                        <div class="separator_mini"></div>  
+                                       <!-- Social network link -->
+                                        <span class="share"><span>share</span></span>
+                                        <ul class="social_bookmarks">                 
+                                            <li ><a ><i class="icon-facebook"></i></a></li>
+                                            <li ><a ><i class="icon-twitter"></i></a></li>
+                                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                                            <li ><a ><i class="icon-flickr"></i></a></li>                
+                                            <li ><a ><i class="icon-pinterest"></i></a></li>
+                                        </ul>
+                                        
+                                        <div class="separator"> </div>
+        
+                                        <span class="share"><span>Tags</span></span>
+                                        <ul class="tag">                    
+                                            <li>windows</li>
+                                            <li>ios</li>
+                                            <li>Android</li>
+                                        </ul>  
+                            
+                                        <div class="separator_mini"></div> 
+                                    </div>
+                                              
+                                    <div class="span11" >
+                                        <p>Many congratulations to the following authors who took part in our Envato's Most Wanted event where we invited authors to submit Lightroom & Aperture Plugins to GraphicRiver:</p>
+                                        
+                                        <p>All authors will be receiving cash (PayPal/Skrill) payments within the next couple of weeks and will also receive an Envato's Most Wanted badge!  Meanwhile, you can see all the entries to the contest within our Lightroom Presets & Aperture Presets categories.</p>
+                                        
+                                        <a href="plain_blog.html" target="_self" ><span class="alignLeft button">Continue reading</span></a>               
+                                        <hr>          
+                                    </div>
+                                                                   
+                                </div>
+                            </dd>
+                            
+                            
+                        <!-- Accordion tab -->
+                        <!-- Blog Post -->
+                        <dt>
+                            <a href="" class="normal">
+                              <div class="acc_heading">                            
+                                  <div class="blog_date dark_color">
+                                      <span  class="b_date">05</span>
+                                      <span  class="b_month">Apr</span> 
+                                      <span  class="b_year">2013</span>                                       
+                                  </div>                              
+                                    <!-- Heading -->
+                                    <span class="b_heading">Now Hiring – Growth Team</span>
+                                </div>
+                            </a>
+                        </dt>
+        
+                            <dd>
+                                <div class="acc_content">
+                                    <!-- Tab content --> 
+                                    <div class="span12" >
+                                        <h2>About the Position</h2>
+                                        <div class="separator_mini"></div> 
+                                    </div>
+                                      
+                                    <div class="span7">
+                                        <a  class="lazyload_single scale-with-grid" href="images/slideshow/image4.jpg" data-src-small="images/slideshow/image4_s.jpg" title="Some text">image</a>
+                                        <div class="separator_mini"></div> 
+                                    </div>
+                                          
+                                    <div class="span4">
+                                        <!-- Blog post Author and data -->
+                                        <a class="list_hover"><i class="icon-user"></i>Anderson Flemming</a>  <br >
+                                        <a class="list_hover"><i class="icon-comment"></i> 45 comments</a>  <br>
+                                        <a class="list_hover"><i class="icon-thumbs-up-alt"></i> 150</a> 
+                              
+                                        <div class="separator_mini"></div>  
+                                       <!-- Social network link -->
+                                        <span class="share"><span>share</span></span>
+                                        <ul class="social_bookmarks">                 
+                                            <li ><a ><i class="icon-facebook"></i></a></li>
+                                            <li ><a ><i class="icon-twitter"></i></a></li>
+                                            <li ><a ><i class="icon-linkedin"></i></a></li>
+                                            <li ><a ><i class="icon-google-plus"></i></a></li>
+                                            <li ><a ><i class="icon-flickr"></i></a></li>                
+                                            <li ><a ><i class="icon-pinterest"></i></a></li>
+                                        </ul>
+                                        
+                                        <div class="separator"> </div>
+                                        <span class="share"><span>Tags</span></span>
+                                        <ul class="tag">                    
+                                            <li>windows</li>
+                                            <li>ios</li>
+                                            <li>Android</li>
+                                        </ul>  
+                            
+                                        <div class="separator_mini"></div> 
+                                    </div>
+                                              
+                                    <div class="span11" >
+                                        <p>At Envato our mission is to help people to earn and to learn, online. We're a young online company, internationally known in our market. Our marketplaces have millions of members who buy and sell digital goods and a network of educational blogs where millions learn creative skills.</p>
+                                        <hr>
+                                        <span class="list3"> Passion for the Envato community, buyers, authors, and staff alike</span>
+                                        <span class="list3">Solid commercial instincts that will help you make fast, accurate decisions</span>
+                                        <span class="list3">Experience consulting and communicating with diverse groups of people across a business</span>
+                                        <span class="list3">Experience using web analytics insights and SEO knowledge to drive new items forward</span>
+                                        <hr>
+                                        <h4>Congratulations once again and keep an eye out for future Envato's Most Wanted events across all our Marketplaces! </h4>
+                                        <hr>
+                                        <a href="plain_blog.html" target="_self" ><span class="alignLeft button">Continue reading</span></a>               
+                                        <hr>          
+                                    </div>
+                                                                   
+                                </div>
+                            </dd>
+                              
+                      </dl>
+                </div>
+            
+                <div class="page_bottom_spacing"></div>            
+		</div>
+	</div>
+    
+</div>
+
+
+<!-- Contact us -->
+       
+<div class="contentWrapper full-Height contactPage darkStyle backGround removePadding" data-id="!contactus" >    
+	
+     <div class="container mobileSpacing">         
+        <div class="row-fluid">
+            <div class="span12" >
+                <hr>
+                  <h1 class="title_text">Contact Us</h1> 
+                <hr>
+            </div>
+        </div>
+    </div>
+
+   <hr class="borderTop light_border noSpacing" />
+
+    
+	<div id="map_canvas" class="fullWidth" > 
+		<!-- Google map load error message -->
+		<div class="pad"> <h6><a> !Google Map is not Loaded, click here to see the map</a></h6> </div>
+	</div>
+    
+    
+    
+    <div class="fullWidth"  > 
+		<div class="container mobileSpacing" >
+				<div class="row divide" >
+                	
+					<div class="span6">
+						<div class="row">
+							<form name="contact" method="post" >
+								<div class="span3">
+                                	<input type="text" value="Name" id="name" name="name" class="span3" 
+								onfocus="if(this.value == 'Name') {this.value = '';}"	
+								onblur="if (this.value == '') {this.value = 'Name';}" />
+								</div>
+								<div class="span3">
+									<input type="text" value="Email" id="email" name="email" class="span3"  
+								onfocus="if(this.value == 'Email') {this.value = '';}"  
+								onblur="if (this.value == '') {this.value = 'Email';}" />
+								</div>
+
+								<div class="span6">
+                                	<textarea cols="30" rows="5" id="comments" name="comments" class="span6"	
+								onfocus="if(this.value == 'Comments...') {this.value = '';}" 
+								onblur="if (this.value == '') {this.value = 'Comments...';}">Comments...</textarea>
+
+								</div>
+								<div class="span6">
+									<button type="submit" id="email_submit"  class="button alignLeft">SEND</button>                                  
+									<div id="reply_message" ></div> 
+								</div>
+							</form>
+						</div>
+					</div>
+	<!--start sidebar-->
+					<div class="span6" id="address">
+                            <h4>0025 street name<br/>
+                            los Angle, 23589, USA
+                            </h4>                    
+                             <h4>
+                             Tel: 123.123.2586<br/>
+                            Mob: +044-3658954869</h4>
+                                        
+                           <h4> Email: <a>admin@websitename.com</a> </h4><br/>
+
+					</div>
+                    
+                    
+                    
+				</div>
+                <hr>
+			</div>
+	</div>
+    
+</div>
+
+
+<!-- Footer -->
+
+<div class="contentWrapper contactPage darkStyle backGround" data-id="!bottomArea" >
+	<div class="container mobileSpacing">
+        <div class="row">
+            <div class="span3">
+                <h5>Product</h5>
+                <p>
+                <a class="normal" href="#!product_section2">Design</a><br>
+                <a class="normal" href="#!product_section3">Performance</a><br>
+                <a class="normal" href="#!product_section4">screen shots</a><br>
+                </p>
+            </div>
+            <div class="span3">
+              <h5>Community</h5>
+              <p>
+              <a class="normal" href="#!team">Team</a><br>
+              <a class="normal" href="#!blog">Blog</a> <br>
+              </p>
+            </div>   
+            <div class="span3">
+              <h5>Contact us</h5>              
+              <p>0025 street name<br/>
+              los Angle, 23589, USA
+              </p>
+              <h6> Email: <a>admin@websitename.com</a> </h6><br/>
+            </div>         
+            <!-- Load flicker images -->
+            <div class="span3">
+				<h5>Photostream</h5>
+				<ul id="flickerFeed" class="thumbs unstyled"></ul>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="separator_mini"></div>
+        <hr>
+    </div>  
+</div>
+
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42596149-1', 'fmedias.com');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

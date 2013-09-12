@@ -1,0 +1,17 @@
+FitPlain- one page Creative portfolio Template
+Copyright (c) 2013, Subramanian 
+
+Author: Subramanian
+Profile: themeforest.net/user/FMedia/
+	
+Version: 1.0
+Release Date: July 2013
+
+-------------------------
+
+Last update date: 23 July 2013
+
+--------------------------
+Update details:
+
+Just make some changes in html file name that's all
