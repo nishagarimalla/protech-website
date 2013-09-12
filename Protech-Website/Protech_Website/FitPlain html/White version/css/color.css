@@ -86,7 +86,7 @@
 
 	.darkStyle h1, .darkStyle h2, .darkStyle h3, 
 	.darkStyle h4, .darkStyle h5, .darkStyle h6,
-	.darkStyle p, .darkStyle span  {
+	.darkStyle p {
 		color:#cccccc;
 		}
 

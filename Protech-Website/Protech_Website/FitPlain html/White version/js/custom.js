@@ -1278,9 +1278,9 @@ function map_initialize() {
 	var contentString = '<div id="content">'+
 		'<div id="siteNotice">'+
 		'</div>'+
-		'<h4 id="firstHeading" class="mapStyle firstHeading">FMediastudios</h4>'+
+		'<h4 id="firstHeading" class="mapStyle firstHeading">Protech Solutions</h4>'+
 		'<div id="mapStyle">'+
-		'<p class="mapStyle">Leading web design studio</p>'+
+		'<p class="mapStyle">Main Office</p>'+
 		'</div>'+
 		'</div>';
 	var infowindow = new google.maps.InfoWindow({
@@ -1298,14 +1298,14 @@ function map_initialize() {
 		new google.maps.Point(0,0),
 		new google.maps.Point(65, 50));
 
-	/*var companyPos = new google.maps.LatLng(57.0442, 9.9116);*/
+	var companyPos = new google.maps.LatLng(34.744255, -92.273871);
 
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,
 		map: map,
 		icon: companyImage,
 		shadow: companyShadow,
-		title:"Høgenhaug",
+		title:"Protech Solutions Inc.",
 		zIndex: 3});
 	
 	gMapStore = map;
