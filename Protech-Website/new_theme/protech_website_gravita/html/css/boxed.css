@@ -1,0 +1,39 @@
+
+
+body {
+	background: url(../img/pattern/fabric_plaid.png) !important;	
+}
+
+
+@media (min-width: 1200px) {
+
+.boxed {
+	width: 1160px !important;
+	margin: 0 auto;	
+	background: #fff;
+}
+
+
+}
+
+@media (max-width: 1199px) {
+
+.boxed {
+	width: 980px !important;
+	margin: 0 auto;	
+	background: #fff;
+}
+
+
+}
+
+
+@media (max-width: 990px) {
+
+.boxed {
+	width: 100% !important;	
+	background: #fff;
+}
+
+
+}

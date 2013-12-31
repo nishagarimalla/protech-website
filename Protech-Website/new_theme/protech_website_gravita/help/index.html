@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Gravida HTML Template - Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Gravida HTML Template&rdquo; Documentation by Adrian Lampart</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Gravida HTML Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					By: Adrian Lampart
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to mail me via my user page contact form <a href="http://themeforest.net/user/yeroo">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#tempOverview">Template overview</a></li>
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#jQueryFiles">jQuery Files</a></li>
+			<li><a href="#sliderSettings">Sliders</a></li>
+			<li><a href="#custom">Customisation &amp; Features</a>
+            	<ul>
+                	<li><a href="#responsive">Responsive</a></li>
+                    <li><a href="#colors">Color Changing</a></li>
+                    <li><a href="#boxed">Wide / Boxed Version</a></li>
+                    <li><a href="#flickr">Flickr Widget</a></li>
+                    <li><a href="#twitter">Twitter Widget</a></li>
+                    <li><a href="#contact">Contact Form</a></li>
+                </ul>
+            </li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+        
+		<h3 id="tempOverview"><strong>Template overview</strong> - <a href="#toc">top</a></h3>
+        <p>Hello, firstly I would like to thank you for purchasing my template. So let's see what's in this template. </p>
+        
+        <ul>
+        	<li>Responsive HTML5 and CSS3 Clean &amp; Modern Design based on latest version of <a href="http://getbootstrap.com/">Bootstrap 3.0 Framework</a></li>
+            <li>5 predefined color schemes</li>
+            <li>Boxed or Wide version</li>
+            <li><strong>$12</strong> worth premium <strong>Revolution Slider</strong></li>
+            <li>3 Home pages</li>
+            <li>Blog page with many post formats (Image, Video, Slideshow, Audio, Quote, Link)</li>
+            <li>350+ scalable icons. <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a> &amp; <a href="http://zurb.com/playground/foundation-icons?utm_medium=twitter&utm_source=twitterfeed">Foundation Icon Fonts 2 - Social Icons</a> </li>
+            <li>PHP/jQuery Contact Form</li>
+            <li><strong>Twitter</strong> &amp; <strong>Flickr</strong> Widgets</li>
+            <li>A lot of great components</li>
+            <li>Animations</li>
+            <li>jQuery Features:
+            	<ul>
+                	<li>Two Homepage Sliders (<strong>Revolution Slider</strong> &amp; <strong>Flex Slider</strong>)</li>
+                    <li>Portfolio filtering (Isotope)</li>
+                    <li>Validate Contact Form</li>
+                    <li>Great Components (Alert box, Carousel, Accordion, Tabs and many more)</li>
+                </ul>
+            </li>
+            <li>25 HTML Templates:
+            	<ul>
+                	<li>Home (3 versions)</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Tour</li>
+                    <li>Pricing Tables</li>
+                    <li>FAQ</li>
+                    <li>Careers</li>
+                    <li>Sidebar (right, left)</li>
+                    <li>404 Page</li>
+                    <li>Full Width</li>
+                    <li>Portfolio (1,2,3,4 Columns)</li>
+                    <li>Blog</li>
+                    <li>Single Project &amp; Blog page</li>
+                    <li>Contact</li>
+                </ul>
+            </li>
+        </ul>
+		
+        <hr />
+        
+		<h3 id="htmlStructure"><strong>HTML Structure</strong> - <a href="#toc">top</a></h3>
+        
+        <h4><strong>Columns</strong></h4>
+		<p>Leopard template has a fixed layout with a variation of column layouts depending on the page. This theme is based on <strong><a href="http://getbootstrap.com/css/#grid">Bootstrap 3.0</a></strong> Grid System. Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options.<br><br>The main structure of this site is wrapped in a 'container' div. Inside of that div you will find each major section of the site given an appropriate grid size all equalling 12 columns in length. So you can easily and quickly build any page structure as you want. Example:</p>
+        
+        <h5>Code:</h5>
+        <img src="assets/images/columns.jpg" alt="Columns" />
+        <br><br>
+        
+        <div class="info"><h5>Hint:</h5>
+        To separate each 'row' div add <strong>margin-bot</strong> class. It adds 60px bottom margin to row.
+        </div>
+        
+        <h5>Info:</h5>
+        More using examples you can find in <strong>grid.html</strong> file.<br><br>
+        
+        
+        
+		<h3 id="htmlStructure"><strong>Structure Examples</strong></h3>
+        
+        <h4><strong>Top bar structure</strong></h4>
+        <img src="assets/images/top-bar.jpg" alt="" /><br /><br />
+        
+        <div class="info"><h5>Hint:</h5>
+        If you don't need top bar, just delete the content of #top-bar div. Leaving &lt;div id="#top-bar"&gt;&lt;/div&gt; you will get empty 5px bar on top.
+        </div>
+        
+        <h4><strong>Menu structure</strong></h4>
+        <img src="assets/images/menu.jpg" alt="" /><br /><br />
+        
+        <h4><strong>Footer structure</strong></h4>
+        <img src="assets/images/footer.jpg" alt="" /><br /><br />
+        
+        <h4><strong>Portfolio (3 columns) structure (portfolio-3col.html)</strong></h4>
+        <img src="assets/images/portfolio.jpg" alt="" /><br /><br />
+        
+        <h4><strong>Full width section with background</strong></h4>
+        <img src="assets/images/full-width.jpg" alt="" /><br /><br />
+        
+        <div class="info"><h5>Hint:</h5>
+        Add <strong>fw-border</strong> class to add borders in section, <strong>fw-border-top</strong> to border on top of the section or <strong>fw-border-bottom</strong> to border on bottom.
+        </div>
+        
+        
+        <hr />
+
+		<p>If you would like to edit the color, font, or style of any elements in one of these structures, you would do the following:</p>
+
+<pre>
+a {
+	color: #fff;
+} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	
+footer .yourDiv a {
+	color: #f3f3f3;
+}
+</pre>
+		
+        <hr />
+        
+		<h3 id="features"><strong>Features</strong> - <a href="#toc">top</a></h3>
+        
+        <h4><strong>Components</strong></h4>
+        
+        Gravida Template contain many beautiful and ready to use components like buttons, accordion, tabs, carousel, text bars and many more. All components you will find in <strong>components.html</strong> file.<br><br><br>
+        
+        <div class="info">
+        <strong>Toogle, Accordion hint:</strong><br><br>
+        Each collapsed panel should contain <strong>collapsed</strong> class at <strong>accordion-toogle</strong> class.
+        </div>
+        
+        <h4><strong>Animations</strong></h4>
+        
+        Template including fantastic <a href="http://daneden.me/animate/">Animate.css</a> animations. To add animation just add <strong>animation animationType</strong> class. Where animationType is the animation that you need. Ex. &lt;div class="animation flipInX"&gt;&lt;/div&gt;<br>Great using example you will find in <strong>home-2.html</strong> file. <br><br>
+        
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>The main file responsible for styling this template is <strong>style.css</strong> in main folder. You can free modify this file depending on the customization you require.<br><br>
+        There are also additional CSS stylesheets files, which is not recommended to modify them.<br /><br />
+        
+        List of css files (../css/):
+        <ul>
+        	<li><strong>animate.css</strong></li>
+        	<li><strong>bootstrap.css</strong></li>
+        	<li><strong>boxed.css</strong></li>
+        	<li><strong>font-awesome.min.css</strong></li>
+        	<li><strong>font-awesome-ie7.css</strong></li>
+        	<li><strong>prettyPhoto.css</strong></li>
+        	<li><strong>shortcodes.css</strong></li>
+        	<li><strong>social_foundicons.css</strong></li>
+        	<li><strong>social_foundicons_ie7.css</strong></li>
+        	<li><strong>socialcount.min.css</strong></li>
+        </ul>
+        </p> 
+
+		<p>The style.css file is separated into sections using:</p>  
+
+<pre>		
+/*--------------------------------------------------------------------------*/
+/* MAIN NAV
+/*--------------------------------------------------------------------------*/
+
+/* PRIMARY NAV */
+
+#main-nav { 
+	margin-top: -17px;
+	position: absolute;
+	right: 0px;
+	top: 50%;;
+}
+
+...
+
+
+/*--------------------------------------------------------------------------*/
+/* BLOG
+/*--------------------------------------------------------------------------*/
+
+/* LATEST POSTS  ------------------------------------------------ */
+
+
+.latest-post-item {
+	background: #fff;
+	-webkit-border-radius: 	3px;
+	-moz-border-radius:		3px;	
+	border-radius: 			3px;
+	-webkit-box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.1); 
+	   -moz-box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.1);
+			box-shadow: inset 0 -1px 0px rgba(0, 0, 0, 0.1);
+	overlay: hidden;
+}
+
+...
+	
+etc, etc. 
+
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<hr>
+        
+		<h3 id="jQueryFiles"><strong>jQuery Files</strong> - <a href="#toc">top</a></h3>
+        
+        <p>All jQuery files you can find in "js" folder.<br>
+        Main file responsible for settings and scripts displaying is <strong>custom.js</strong><br><br>
+        
+        List of js files (../js/):
+        <ul>
+        	<li><strong>custom.js</strong> - main js file</li><br>
+        	<li><strong>jquery-1.9.1.min.js</strong></li>
+        	<li><strong>bootstrap.min.js</strong></li>
+        	<li><strong>jquery.flexslider-min.js</strong></li>
+        	<li><strong>jquery-scrolltofixed-min.js</strong></li>
+        	<li><strong>jquery.flexisel.js</strong></li>
+        	<li><strong>jquery.fitvids.js</strong></li>
+        	<li><strong>jquery.jplayer.min.js</strong></li>
+        	<li><strong>jquery.qtip.min.js</strong></li>
+        	<li><strong>jquery.isotope.min.js</strong></li>
+        	<li><strong>respond.min.js</strong></li>
+        	<li><strong>retina.js</strong></li>
+        	<li><strong>waypoints.min.js</strong></li>
+
+        </ul>     
+           </p>
+        
+        
+        
+        <hr>
+		
+		<h3 id="sliderSettings"><strong>Sliders</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Template conatain two homepage Sliders: 
+        <ul>
+        	<li>Revolution Slider</li>
+            <li>Flex Slider</li>
+        </ul>
+        </p>
+		
+		<h4><strong>Revolution Slider</strong></h4>
+        
+        <div class="info">Full documentation and examples you will find in revolution-slider folder.<br>
+        Using example in <strong>index.html</strong> file.
+        </div>
+        <h4><strong>Flex Slider</strong></h4>
+        
+        <div class="info">Examples and options you will find at <a href="http://www.woothemes.com/flexslider/">Flex Slider</a> website<br>
+        Using example in <strong>home-2.html</strong>, <strong>careers.html</strong> and <strong>portfolio-single.html</strong> files.
+        </div>
+		  
+				
+		<hr>
+        
+		<h3 id="custom"><strong>Customisation &amp; Features</strong> - <a href="#toc">top</a></h3>
+        
+        <h4 id="responsive"><strong>Responsive</strong></h4>
+        <p>Leopard HTML Template is fully responsive so you can comfortable browse your site on mobile devices.<br>
+		Responsive is enabled by default but you can disabled it. More informations you will find <a href="http://getbootstrap.com/getting-started/#disable-responsive">here</a></p>
+        
+        <h4 id="colors"><strong>Color Changing</strong></h4>
+        <p>To change default color scheme go to '<strong> style.css </strong>' and modify this section:
+        
+        <pre>
+/*--------------------------------------------------------------------------*/
+/* IMPORT
+/*--------------------------------------------------------------------------*/
+...
+
+/* COLORS */
+<strong>@import url("css/colors/color-blue.css"); </strong>
+
+...
+        </pre>
+        <p>You can choose one of this predefined colors:
+        <ul>
+        	<li>css/colors/color-blue.css</li>
+        	<li>css/colors/color-green.css</li>
+        	<li>css/colors/color-orange.css</li>
+        	<li>css/colors/color-turq.css</li>
+            <li>... or easily create you own color scheme</li>
+        </ul>
+        </p>
+        
+        <h4 id="boxed"><strong>Wide / Boxed version</strong></h4>
+        <p>You can also choose beetwen wide ( stretched ) or boxed version. Wide is default, to set the boxed versions go to  '<strong> style.css </strong>' and modify this section:
+                <pre>
+/*--------------------------------------------------------------------------*/
+/* IMPORT
+/*--------------------------------------------------------------------------*/
+...
+
+/* SET BOXED */
+<strong>/* @import url("css/boxed.css"); */</strong> // remove /* */ to set boxed
+
+...
+        </pre>
+        </p>
+        
+        <h4  id="flickr"><strong>Flickr Widget</strong></h4>
+        	<p>Code responsible for displaying flickr photos:  </p>
+            <pre>
+&lt;script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;size=s&amp;layout=h&amp;source=user&amp;user=52617155@N08"&gt;&lt;/script&gt;</pre>
+			<p>For displaying your own Flickr photos go to <a href="http://idgettr.com/">idGettr.com</a> to get your flickr id and put it instead "52617155@N08"</p>
+        
+        <h4 id="twitter"><strong>Twitter Widget</strong></h4>
+        	<p>Code responsible for displaying twitter feeds:  </p>
+            <pre>
+&lt;div class="widget-twitter"&gt;&lt;/div&gt;
+			</pre>
+			<p>For displaying your own Tweeter Feeds:</p>
+            <ol>
+            	<li>You need to have a twitter App for your usage in order to obtain OAuth credentials, see <a href="https://dev.twitter.com/apps">https://dev.twitter.com/apps</a> for help.</li>
+                <li>After creating your app, configure '<strong>js/twitter/index.php</strong>' with your OAuth credentials, and enable caching if you desire. Your cache directory of choice must be writable by PHP.</li>
+            	<li>Go to '<strong> js/custom.js </strong>' and modify this section</li>
+            </ol>
+            <pre>
+/* TWITTER WIDGET */
+$(document).ready(function() { 
+$('.widget-twitter').tweet({
+			modpath: 'js/twitter/',
+			username: 'envato',
+			join_text: null,
+			avatar_size: null,
+			count: 3,
+			loading_text: 'loading twitter feed...',
+			template: "{text}&lt;br&gt;{time}"
+	});
+});         
+            </pre>
+        
+        <h4 id="contact"><strong>Contact Form</strong></h4>
+        <p>Setting up the contact form to forward email messages requires that the template is hosted on a server that supports PHP. Please contact your hosting provider if you're unsure of if they do support it. <br><br>The only step required to have message directed to your email of course, is to update '<strong>php/send.php</strong>' with your own email address as seen below. </p> 
+        
+        <pre>
+&lt;?php
+	if($_POST){
+		$to = 'your.email@domain.com'; /*Put Your Email Adress Here*/
+		$from_name = $_POST['name'];
+		$from_email = $_POST['email'];
+		$message = $_POST['message'];
+		$subject = "Contact form message: $from_name &lt;$from_email&gt;";
+		$header = "From: $from_name &lt;$from_email&gt;";
+		mail($to, $subject, $message, $header);
+	}
+?&gt;
+        </pre>
+        
+        <hr>
+		
+		<h3 id="psdFiles"><strong>PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Package contain 10 psd files:</p>
+		
+			<ul>
+				<li>about_us.psd</li>
+				<li>blog.psd</li>
+				<li>blog_post.psd</li>
+				<li>contact.psd</li>
+				<li>home.psd</li>
+				<li>portfolio_1-col.psd</li>
+				<li>portfolio_3-col.psd</li>
+				<li>portfolio_single.psd</li>
+				<li>pricing_table.psd</li>
+				<li>services.psd</li>
+			</ul>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>Sources and Credits</strong> - <a href="#toc">top</a></h3>
+        <h4>Resources Used:</h4> 
+		<ul>
+        	<li><a href="http://getbootstrap.com/">Bootstrap v3.0.0</a> ( Apache License v2.0 )</li>
+        	<li><a href="http://jquery.com/">jQuery v.1.9.1</a> ( MIT License )</li>
+        	<li><a href="http://daneden.me/animate/">Animate.css</a> ( MIT License )</li>
+        	<li><a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome v3.2.1</a> (  MIT License )</li>
+        	<li><a href="http://zurb.com/playground/foundation-icons?utm_medium=twitter&utm_source=twitterfeed">Social Foundicons</a> ( MIT license )</li>
+        	<li><a href="http://www.woothemes.com/flexslider/">Flex Slider 2.0</a> ( MIT license )</li>
+        	<li><a href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">Slider Revolution Responsive jQuery Plugin</a> ( Extended License )</li>
+        	<li><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">PrettyPhoto</a> ( GPLv2 license )</li>
+        	<li><a href="https://github.com/StanScates/Tweet.js-Mod">Tweet.js-Mod v1.4</a> ( MIT license )</li>
+        	<li><a href="https://github.com/filamentgroup/SocialCount">SocialCount - v0.1.5</a> ( MIT license )</li>
+        	<li><a href="http://fitvidsjs.com/">FitVids 1.0</a> ( MIT license )</li>
+        	<li><a href="http://9bitstudios.github.io/flexisel/">Flexisel v1.0.2</a> ( MIT license )</li>
+        	<li><a href="http://isotope.metafizzy.co/">Isotope v1.5.25</a> ( Commercial License )</li>
+        	<li><a href="http://www.jplayer.org">jPlayer </a> ( MIT license )</li>
+        	<li><a href="https://github.com/bigspotteddog/ScrollToFixed">ScrollToFixed</a> ( MIT license )</li>
+        	<li><a href="https://github.com/scottjehl/Respond">Respond.js</a> ( MIT license )</li>
+        	<li><a href="http://retinajs.com">retina.js v0.0.2</a> ( MIT license )</li>
+        	<li><a href="http://imakewebthings.com/jquery-waypoints/">jQuery Waypoints - v2.0.3</a> ( MIT license )</li>
+        	<li><a href="http://subtlepatterns.com/">Subtle Patterns</a></li>
+        	<li><a href="http://unsplash.com">Unsplash photos</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Adrian</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
